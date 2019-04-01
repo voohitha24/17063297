@@ -41,40 +41,23 @@ public class TodoListTest {
     /**
      * Test of moveUp method, of class TodoList.
      */
-    @Test
-public void testMoveUp() 
+   public void testMoveUp() 
 {
-fail("Not yet implemented");
+    System.out.println("moveup");
+    int i = 0;
+    TodoList instance = new TodoList();
+    String name = "vothaiho";
+    instance.add(name);
+    name = "ravi";
+    instance.add(name);
+    instance.moveUp(1);
+    String expResult = "ravi";
+    String result =  instance.elementAt(0);
+    assertEquals(expResult, result);
+   System.out.println("entry is moved up");
 }
 
-@Test
-public void testMoveDown() 
-{
-fail("Not yet implemented");
-}
-
-@Test
-public void testAdd() 
-{
-fail("Not yet implemented");
-}
-
-@Test
-public void testEditAt() 
-{
-fail("Not yet implemented");
-}
-
-@Test
-public void testRemoveAt() 
-{
-fail("Not yet implemented");
-}
-
-@Test
-public void testSize() 
-{
-fail("Not yet implemented");
-}
     
+           
+
 }

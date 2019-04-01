@@ -41,20 +41,19 @@ public class TodoListTest {
     /**
      * Test of moveUp method, of class TodoList.
      */
-   public void testRemoveAt() 
+   public void testSize() 
 {
-    System.out.println("removeAt");
-    int i = 0;
+    System.out.println("size");
     TodoList instance = new TodoList();
     String name = "voohitha";
     instance.add(name);
-    int size1 = instance.size();
-    instance.removeAt(0);
-    int size2 = instance.size();
-    assertTrue(size2<size1);
-    System.out.println("entry is removed");
+    name = "ravi";
+    instance.add(name);
+    int expResult = 2;
+    int result = instance.size();
+    assertEquals(expResult, result);
+    System.out.println("list size is"+result);
 }
-
            
 
 }

@@ -41,17 +41,30 @@ public class TodoListTest {
     /**
      * Test of moveUp method, of class TodoList.
      */
-   public void testAdd()
+   public void testEditAt() 
+        
 {
-    System.out.println("Add");
+    System.out.println("EditAt");
     TodoList instance = new TodoList();
-     String name = "vothaiho";
-    instance.add(name);
-    int i = instance.size();
-    assertTrue(i > 0);
-    System.out.println("entry is added");
-}
+    int i = 0;
+    String Name = "Ravi";
+    instance.add(Name);
+    Name = "Voohitha";
+    instance.add(Name);
+    Name = "sai";
+    instance.add(Name);
+    String result = instance.elementAt(1);
+    String newValue = "suresh";
+    instance.editAt(1, newValue);
+    result = instance.elementAt(1);
+    System.out.println("Editing at entry ");
+    assertEquals(newValue, result);
+    System.out.println("entry is edited");
     
+    
+
+}
+
            
 
 }
